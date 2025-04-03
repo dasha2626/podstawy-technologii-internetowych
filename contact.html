@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>Quick Escape</title>
+        <link rel="stylesheet" href="style-contact.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+     </head>
+    
+<body>
+    
+<div class="background"></div>
+    <header class="header">
+        <h2 class="logo"><i class='bx bxs-plane-alt'></i>
+            Quick Escape</h2>
+            
+        <button class="menu-toggle2" onclick="toggleMenu2()">Menu</button>
+        <nav class="navbar">
+          <a href="index2.html">Strona Główna</a>
+          <a href="table.html">Nasze oferty</a>
+          <a href="contact.html">FAQ & Kontakt</a>
+        </nav>
+        
+        <div class="header-right"></div>
+        <form action="#" class="search-bar">
+          <input type="text" placeholder="Szukaj...">
+          <button type="submit"><i class="bx bx-search"></i></button>
+        </form>
+   
+        <div class="user-menu">
+          <img src="./images/ikonka.png" alt="User" class="user-pic" onclick="toggleMenu()">
+          <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+              <div class="user-info">
+                <img src="./images/ikonka.png" alt="User">
+                <h3>Daria Shapoval</h3>
+              </div>
+              <hr>
+              
+             <a href="./profile.html" class="sub-menu-link">
+               <p><i class='bx bxs-edit'></i>Edytuj profil </p>
+             </a>
+             <a href="./info.html" class="sub-menu-link">
+              <p><i class='bx bxs-cool'></i>O twórcę</p> 
+           </a>
+             <a href="index.html" class="sub-menu-link">
+               <p><i class='bx bx-log-out'></i>Wyloguj się</p>
+             </a>
+            </div>
+          </div>
+        </div>
+  
+  
+    </header>
+
+
+    <div class="help-container">
+    <h1>Pomoc i kontakt</h1>
+    <h2>Masz pytanie i potrzebujesz koła ratunkowego? Jesteś w odpowiednim miejscu.</h2>
+    </div>
+
+
+    <section class="faq">
+      <h2>FAQ - najczęściej zadawane pytania</h2>
+      <div class="block-container">
+     <div class="block">
+      <i class='bx bx-shopping-bag' ></i>
+      <h3>Zakup</h3>
+     </div>
+
+     <div class="block">
+      <i class='bx bxs-credit-card'></i>
+      <h3>Płatność</h3>
+     </div>
+
+
+     <div class="block">
+      <i class='bx bxs-briefcase'></i>
+      <h3>Bagaż</h3>
+     </div>
+
+     <div class="block">
+      <i class='bx bxs-plane-alt' ></i>
+      <h3>Podróż</h3>
+     </div>
+
+     <div class="block">
+      <i class='bx bx-shield-quarter'></i>
+      <h3>Ubiezpieczenie i parking</h3>
+     </div>
+
+     <div class="block">
+      <i class='bx bx-shield-quarter'></i>
+      <h3>Panel klienta</h3>
+     </div>
+    </div>
+
+
+    </section>
+
+    <div class="asq-container">
+      <h1>Twojego pytania nie ma na liście?</h1>
+      </div>
+
+      <div class="contactUs">
+        <div class="title">
+          <h2>Skontaktuj się z nami</h2>
+        </div>
+
+        <div class="box">
+
+          <div class="contact form">
+              <h3>Wyślij wiadomość</h3>
+                 
+              <form>
+
+                <div class="formBox">
+                         <div class="row50">
+                            
+                             <div class="inputBox">
+                                 <span>Imię</span>
+                                 <input type="text" placeholder="Paweł">
+                             </div>
+
+                             <div class="inputBox">
+                                  <span>Nazwisko</span>
+                                  <input type="text" placeholder="Nowak">
+                             </div>
+            
+                         </div>
+
+                         <div class="row50">
+
+                              <div class="inputBox">
+                                 <span>Email</span>
+                                 <input type="text" placeholder="pawełnowak@email.com">
+                              </div>
+
+                                <div class="inputBox">
+                                  <span>Telefon</span>
+                                  <input type="text" placeholder="+48 123 456 789">
+                                </div>
+                         </div>
+
+                    <div class="row100">
+ 
+                         <div class="inputBox">
+                              <span>Wiadomość</span>
+                              <textarea placeholder="Napisz swoją wiadomość tutaj..."></textarea>
+                         </div>
+
+                    </div>
+
+
+                   <div class="row100">
+                        <div class="inputBox">
+                          <input type="submit" value="Wyślij" onclick="pokazKomunikat2(event)">
+                        </div>
+                  </div>
+
+              </div>
+          
+            </form>
+            </div>
+           
+        
+
+
+          <div class="contact info">
+            <h3>Kontakt z nami</h3>
+            <div class="infoBox">
+              <div>
+                <span><i class='bx bxs-map'></i></span>
+                  <p>Piotrkowska 138/140, Łódź <br>Polska</p>
+              </div>
+              <div>
+                <span><i class='bx bxs-envelope'></i></span>
+                 <a href="mailto:quickescape@gmail.com">quickescape@gmail.com</a>
+              </div> 
+              <div>
+                <span><i class='bx bxs-phone-call'></i></span>
+                 <a href="tel:+48601234567">+48 601 234 567</a>
+              </div> 
+           <ul class="sci">
+               <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
+               <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+               <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+               <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+           </ul>
+
+            </div>
+          </div>
+
+
+          <div class="contact map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.46467562013!2d19.4604054!3d51.7611118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a34d45dfe4e99%3A0x78349948b8b92835!2sOFF%20Piotrkowska!5e0!3m2!1sru!2spl!4v1731694182436!5m2!1sru!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div id="message" style="display:none;">
+        Twoja wiadomość została wysłana!
+    </div>
+
+  <script src="./script.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+ <html LANG="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+    content="IE=edge">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Quick Escape</title>
+    <link rel="stylesheet" href="style-profile.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+ </head>
+
+<body>
+
+    <header class="header">
+        <h2 class="logo"><i class='bx bxs-plane-alt'></i>
+            Quick Escape</h2>
+            <button class="menu-toggle2" onclick="toggleMenu2()">Menu</button>
+            <nav class="navbar">
+              <a href="index2.html">Strona Główna</a>
+              <a href="table.html">Nasze Oferty</a>
+              <a href="contact.html">FAQ & Kontakt</a>
+              
+            </nav>
+        
+        
+        <div class="header-right"></div>
+        
+        
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="Szukaj...">
+            <button type="submit"><i class="bx bx-search"></i></button>
+          </form>
+        <div class="user-menu">
+            <img src="./images/ikonka2.jpg" alt="User" class="user-pic" onclick="toggleMenu()">
+            <div class="sub-menu-wrap" id="subMenu">
+              <div class="sub-menu">
+                <div class="user-info">
+                  <img src="./images/ikonka2.jpg" alt="User">
+                  <h3>Angelina Jolie</h3>
+                </div>
+                <hr>
+                <a href="./info.html" class="sub-menu-link">
+                  <p>O twórce<i class='bx bxs-cool'></i></p>
+                </a>
+                <a href="./index.html" class="sub-menu-link">
+                  <p>Wyloguj się <i class='bx bx-log-out'></i></p>
+                </a>
+              </div>
+            </div>
+          </div>
+       
+    </header>
+  
+    <div class="background"></div>
+
+<section class="profile">
+    <div class="profile-container">
+        <h1>Zalogowany użytkownik</h1>
+        
+        <div class="profile-image">
+            <img src="./images/ikonka2.jpg" alt="Zdjęcie profilowe" id="profile-image" >
+            <input type="file" id="file-input" onchange="previewImage(event)" style="display: none;">
+            <button type="button" id="change-image-button" onclick="document.getElementById('file-input').click();" style="display: none;">Zmień zdjęcie</button>
+        </div>
+
+        
+        <div class="profile-data">
+            <form id="profile-form">
+                <label for="first-name">Imię:</label>
+                <input type="text" id="first-name" value="Angelina" disabled >
+
+                <label for="last-name">Nazwisko:</label>
+                <input type="text" id="last-name" value="Jolie" disabled >
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" value="jolie@gmail.com" disabled >
+
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" value="+48 215 543 876" disabled >
+
+                <label for="bio">Bio:</label>
+                <textarea id="bio" disabled>Nigdy nie rezygnuj z marzeń, nawet jeśli droga wydaje się zbyt długa.</textarea>
+                
+             
+                <button type="button" id="edit-button" class="button-style" onclick="toggleEdit()">Edytuj profil</button>
+            </form>
+        </div>
+  
+
+    
+        <button type="button" id="show-offers" class="button-style" onclick="toggleOffers()">Pokaż wybrane oferty</button>
+        <div id="offers-list">
+            <div class="offer">
+                <img src="./images/spain.jpg" alt="Hiszpania" class="country-image">
+                <div class="offer-details">
+                    <p>Hiszpania</p>
+                    <p>Hotel: Hotel Park</p>
+                    <p>Termin: 3 grudnia - 9 grudnia 2024</p>
+                    <p>Cena: 5050 PLN</p>
+                    <a href="#">Szczegóły</a>
+                </div>
+            </div>
+            <div class="offer">
+                <img src="./images-tables/italia.jpg" alt="Włochy" class="country-image">
+                <div class="offer-details">
+                    <p>Włochy</p>
+                    <p>Hotel: Hotel Royal</p>
+                    <p>Termin:27 listopada - 3 grudnia 2024</p>
+                    <p>Cena: 6000 PLN</p>
+                    <a href="#">Szczegóły</a>
+                </div>
+            </div>
+            <div class="offer">
+                <img src="./images/greece.jpg" alt="Grecja" class="country-image">
+                <div class="offer-details">
+                    <p>Grecja</p>
+                    <p>Hotel: Athens Resort</p>
+                    <p>Termin:26 listopada - 2 grudnia 2024</p>
+                    <p>Cena: 8400 PLN</p>
+                    <a href="#">Szczegóły</a>
+                </div>
+            </div>
+        </div>
+        </div>
+  
+</section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

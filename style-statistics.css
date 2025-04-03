@@ -1,0 +1,410 @@
+*{
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #e5c28b;
+  z-index: -100;
+}
+
+
+.header{
+    position: relative; 
+    top: 0;      
+    left: 0;      
+    width: 100%;    
+    padding: 25px 12.5%;  
+    background: transparent;   
+    display: flex;     
+    justify-content: space-between;  
+    align-items: center;   
+    z-index: 100;       
+}
+
+
+.navbar a{
+    position: relative;  
+    font-size: 16px; 
+    color: black;  
+    text-decoration: none;  
+    font-weight: 500;  
+    margin-right: 30px; 
+
+}
+
+.navbar a::after {  
+    content: ' '; 
+    position: absolute; 
+    left: 0; 
+    bottom: -6px;  
+    width: 100%; 
+    height: 2px; 
+    background: black;  
+    border-radius: 5px;  
+    transform: translateY(10px); 
+
+    opacity: 0;  
+    transition: .5s;  
+}
+
+.navbar a:hover::after {    
+    transform: translateY(0);  
+    opacity: 1; 
+}
+
+
+.search-bar{
+    width: 250px;  
+    height: 45px;  
+    background: transparent;  
+    border: 2px solid black; 
+    border-radius: 6px;
+    display: flex; 
+    align-items: center; 
+}
+
+.search-bar input{
+ width: 100%;
+ background: transparent; 
+ border: none; 
+ outline: none;  
+ font-size: 16px;  
+ color: black;
+ padding-left: 10px; 
+}
+
+.search-bar input::placeholder{
+    color: black;
+}
+
+.search-bar button{
+    width: 40px;
+    height: 100%;
+    background:transparent;
+    border: none;
+    outline: none;
+    display: flex; 
+    justify-content: center;  
+    align-items: center; 
+    cursor: pointer;
+ 
+}
+
+.search-bar button i{
+font-size: 22px;   
+color: black;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    height: 100%;  
+    background: url(./images/background.jpg) repeat-y; 
+    background-size: cover;  
+    background-position: center;  
+    filter: blur(10px);  
+    z-index: -1;
+}
+
+
+
+
+ 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 2px solid #333;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+  }
+  
+  .search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .user-menu {
+    position: relative;
+  }
+  
+  .user-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .sub-menu-wrap {
+    position: absolute;
+    top: 100%;
+    right: 10%; 
+    width: 400px; 
+    max-height: 0;
+    overflow: hidden;
+    background: #81b3e0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: max-height 0.5s ease; 
+  }
+  
+  .sub-menu-wrap.open-menu {
+    max-height: 600px; 
+  }
+  
+  .sub-menu {
+    padding: 15px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .user-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .user-info h3 {
+    font-size: 16px; 
+    margin: 0; 
+    color: #333; 
+    font-weight: bold;
+  }
+  
+  
+  .sub-menu-link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+    transition: color 0.3s ease; 
+    font-weight: bold;
+  }
+  
+  
+
+.sub-menu-link:hover {
+  color: #ffffff;
+}
+
+
+.charts-header {
+  text-align: center; 
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+}
+.charts-header h1 {
+  font-size: 2.5rem; 
+  color: #333; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  text-align: center; 
+  margin: 0 auto; 
+}
+
+
+
+
+.charts-wrapper {
+    display: flex;
+    justify-content:space-between;
+    gap: 20px;
+    margin-top: 30px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    z-index: 1;
+    position: relative;
+
+}
+
+
+.chart h2 {
+  margin: 0; 
+  padding: 0; 
+  font-size: 1.5rem; 
+  color: #333; 
+  font-weight: bold; 
+  text-align: left; 
+  width: 100%; 
+  margin-bottom: 15px;
+}
+
+
+.chart {
+    flex: 1;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+}
+
+canvas {
+    max-width: 80%; 
+    height: auto;
+    max-height: 180px; 
+    
+}
+@media (max-width: 768px) {
+  body {
+      width: 50%;  
+      margin: 0 auto;  
+      text-align: left;
+      overflow-x: hidden;
+  }
+
+  .container {
+    padding: 10px;  
+}
+
+  .charts-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+  }
+
+  .chart {
+      width: 100%;
+      max-width: 600px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  body {
+   
+      width: 95%;  
+      margin: 0 auto;  
+      font-size: 12px;  
+      text-align: left;
+      overflow-x: hidden;
+  }
+ 
+  .container {
+    padding: 5px;  
+}
+
+  .charts-wrapper {
+      display: block;
+  }
+
+  .chart {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  
+}
+
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  header .logo {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .header-right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar input {
+    width: 200px; 
+    font-size: 14px;
+  }
+
+  .search-bar button {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .user-pic {
+    width: 60px;
+    height: 60px;
+  }
+
+  .sub-menu-wrap {
+    width: 200px; 
+  }
+}
+
+
+
+.menu-toggle2 {
+  display: none; 
+}
+
+@media (max-width: 768px) {
+  .menu-toggle2 {
+    display: block; 
+    background: #333; 
+    color: white; 
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .navbar {
+    display: none; 
+    flex-direction: column; 
+    gap: 10px;
+  }
+
+  .navbar.active {
+    display: flex; 
+  }
+}
+
+@media (max-width: 768px) {
+ .charts-header h1 {
+      font-size: 16px;  
+  }
+}
+
+@media (max-width: 480px) {
+  .charts-header h1 {
+      font-size: 14px;  
+  }
+}

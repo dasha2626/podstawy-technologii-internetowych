@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+         content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quick Escape</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     </head>
+    
+<body>
+    
+
+    <header class="header">
+        <h2 class="logo"><i class='bx bxs-plane-alt'></i>
+            Quick Escape</h2>
+        <button class="menu-toggle2" onclick="toggleMenu2()">Menu</button>
+        <nav class="navbar">
+          <a href="index2.html">Strona Główna</a>
+          <a href="table.html">Nasze Oferty</a>
+          <a href="contact.html">FAQ & Kontakt</a>
+          
+        </nav>
+        
+        <div class="header-right"></div>
+        <form action="#" class="search-bar">
+          <input type="text" placeholder="Szukaj...">
+          <button type="submit"><i class="bx bx-search"></i></button>
+        </form>
+        <div class="user-menu">
+          <img src="./images/ikonka.png" alt="User" class="user-pic" onclick="toggleMenu()">
+          <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+              <div class="user-info">
+                <img src="./images/ikonka.png" alt="User">
+                <h3>Daria Shapoval</h3>
+              </div>
+              <hr>
+              <a href="./profile.html" class="sub-menu-link">
+                <p><i class='bx bxs-edit'></i> Edytuj profil </p>
+              </a>
+              <a href="./info.html" class="sub-menu-link">
+                <p><i class='bx bxs-cool'></i>O twórcę</p>
+              </a>
+              <a href="./index.html" class="sub-menu-link">
+                <p><i class='bx bx-log-out'></i>Wyloguj się</p>
+              </a>
+            </div>
+          </div>
+        </div>
+ 
+  
+    </header>
+    <div class="background"></div>
+     <section class = "home" id = "home">
+
+      <div class="content">
+        <h3>Quick Escape</h3>
+        <span> Łap okazję i podróżuj po całym świecie już teraz!</span>
+        <p>Tutaj to miejsce, gdzie znajdziesz najlepsze okazje na spontaniczne podróże. Wystarczy kilka kliknięć, aby znaleźć i zarezerwować idealną podróż w ostatniej chwili.</p>
+        <a href="#about" class="btn">Odkryj przygodę</a>
+      </div>
+     </section>
+    
+<section class="about" id="about">
+   <h2 class="heading"><span> ABOUT </span> US </h2>
+
+   <div class="row">
+
+         <div class="video-container">
+         <video src="./images/video.mp4" loop autoplay muted></video>
+         <h3>Najlepsze okazje na spontaniczne podróże!</h3>
+         </div>
+
+
+        <div class="content">
+        <h3>Dlaczego warto nas wybrać?</h3>
+        <p>Dzięki naszym ofertom last minute odkryjesz świat bez długiego planowania i stresu. Wybierz Quick Escape – gdzie spontaniczność łączy się z komfortem</p>
+        <a href="#oferty" class="btn">Dowiedz się więcej o ofertach</a>
+</div>
+
+</div>
+
+   </section>
+
+<section class="icons-container">
+
+
+     <div class="icons">
+      <img src="./images/offer-solid-24.png" alt="">
+      <div class="info"></div>
+        <h3>Specjalne oferty i zniżki</h3>
+        <span>Skorzystaj z wyjątkowych ofert</span>
+     </div>
+
+     
+     <div class="icons">
+      <img src="./images/plane-alt-solid-24.png" alt="">
+      <div class="info"></div>
+        <h3>Gotowe do wyjazdu</h3>
+        <span>Ruszaj w drogę od zaraz</span>
+     </div>
+
+     <div class="icons">
+      <img src="./images/shield-quarter-regular-24.png" alt="">
+      <div class="info"></div>
+        <h3>Bezpieczne płatności</h3>
+        <span>Bezpieczne metody płatności</span>
+     </div>
+
+     <div class="icons">
+      <img src="./images/coin-stack-solid-24.png" alt="">
+      <div class="info"></div>
+        <h3>Gwarancja najlepszej ceny</h3>
+        <span>Najkorzystniejsze ceny </span>
+     </div>
+
+</section>
+
+<h1 class="heading">NAJNOWSZE <span> PROMOCJE</span> </h1>
+
+<button class="menu-toggle" aria-label="Otwórz menu">☰</button>
+<nav class="oferty" id="oferty">
+      <ul>
+          <li data-f="all">Wszystkie</li>
+          <li data-f="europa" class="text-europa">Europa</li>
+          <li data-f="afryka" class="text-afryka" >Afryka</li>
+          <li data-f="azja" class="text-azja" >Azja</li>
+          <li data-f="ameryka" class="ameryka" >Ameryka Północna</li>
+      </ul>
+  </nav>
+
+    <div class="block-cover">
+
+      <div class="offers">
+        <div class="col-auto box europa">
+          <article class="offer">
+              <span class="discount">-10%</span>
+              <div class="image">
+                  <img src="./images/greece.jpg" alt="">
+              </div>
+              <div class="content">
+                  <h2 contenteditable="false">Wyjazd do Grecji</h2>
+                  <div class="price">
+                      <span class="old-price">2500 zł</span>
+                      <span  class="new-price">2750 zł</span>
+                  </div>
+                  <p><strong>Termin:</strong> <span>20-30 Lipca</span></p>
+                  <p>Fantastyczny wyjazd last-minute na greckie wyspy!</p>
+                  <button class="offer-btn" onclick="pokazKomunikat()">Wybierz ofertę</button>
+
+
+               
+              </div>
+          </article>
+      </div>
+      
+
+     <div class="col-auto box europa">
+       <article class="offer">
+        <span class="discount">-20%</span>
+        <div class="image">
+        <img src="./images/spain.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2>Wakacje w Hiszpanii</h2>
+          <div class="price">
+            <span class="old-price">2500 zł</span>
+        <span class="new-price">2000 zł</span>
+            </div>
+          <p><strong>Termin:</strong><span>10-20 Sierpnia</span></p>
+          <p>Gorące wakacje na słonecznym wybrzeżu Costa Brava!</p>
+          <button class="offer-btn" onclick="pokazKomunikat()">Wybierz ofertę</button>
+          
+        </div>
+       </article>
+    </div>
+
+  <div class="col-auto box europa">
+   <article class="offer">
+    <span class="discount">-15%</span>
+    <div class="image">
+      <img src="./images/paris.jpg" alt="">
+    </div>
+    <div class="content">
+      <h2>Weekend w Paryżu</h2>
+      <div class="price"> 
+        <span class="old-price">2500 zł</span> 
+        <span  class="new-price">2750 zł </span>
+      </div>
+      <p><strong>Termin:</strong><span>5-7 Września</span></p>
+      <p>Romantyczny weekend w stolicy Francji!</p>
+      <button class="offer-btn" onclick="pokazKomunikat()">Wybierz ofertę</button>
+      
+      </div>
+   </article>
+  </div>
+
+
+    <div class="col-auto box azja">
+      <article class="offer">
+        <span class="discount">-5%</span>
+        <div class="image">
+          <img src="./images/thailand.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2>Wakacje w Tajlandii</h2>
+          <div class="price"> 
+            <span class="old-price">2625 zł</span> 
+            <span  class="new-price">2750 zł </span>
+          </div>
+          <p><strong>Termin:</strong><span>10-15 Października</span></p>
+          <p>Rajski wypoczynek na plażach Tajlandii, z odkrywaniem kultury i wspaniałych świątyń!</p>
+          <button class="offer-btn" onclick="pokazKomunikat()">Wybierz ofertę</button>
+        
+          </div>
+      </article>
+    </div> 
+
+
+    <div class="col-auto box afryka">
+      <article class="offer">
+        <span class="discount">-30%</span>
+        <div class="image">
+          <img src="./images/Seychelles.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2>Relaks na Wyspach Seszeli</h2>
+          <div class="price"> 
+            <span class="old-price">1750 zł</span>
+            <span  class="new-price"> 2500 zł </span>
+          </div>
+          <p><strong>Termin:</strong><span>20-27 Listopada</span></p>
+          <p>Odkryj rajskie plaże i tropikalną przyrodę na Seszelach!</p>
+          <button class="offer-btn" onclick="pokazKomunikat()">Wybierz ofertę</button>
+     
+          </div>
+      </article>
+  </div>
+  
+  <div class="col-auto box azja">
+      <article class="offer">
+        <span class="discount">-25%</span>
+        <div class="image">
+          <img src="./images/Bali.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2 contenteditable="false">Wakacje na Bali</h2>
+          <div class="price"> 
+            <span class="old-price">1875 zł</span> 
+              <span class="new-price">2500 zł</span>
+            </div>
+          <p><strong>Termin:</strong><span>15-22 Listopada</span></p>
+          <p>Odpocznij na malowniczych plażach Bali i ciesz się lokalną kulturą!</p>
+          <button class="offer-btn" onclick="pokazKomunikat()">Wybierz ofertę</button>
+      
+          </div>
+      </article>
+  </div>
+  
+  <div class="col-auto box azja">
+      <article class="offer">
+        <span class="discount">-12%</span>
+        <div class="image">
+          <img src="./images/japan.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2>Zwiedzanie Japonii</h2>
+          <div class="price">  
+            <span class="old-price">2250 zł</span> 
+            <span class="new-price">2500 zł</span>
+          </div>
+          <p><strong>Termin:</strong><span>1-8 Grudnia</span></p>
+          <p>Odkryj magiczne miejsca Tokio i Kyoto oraz delektuj się sushi!</p>
+          <button class="offer-btn" onclick="pokazKomunikat()">Wybierz ofertę</button>
+         
+        </div>
+      </article>
+  </div>
+
+
+  <div class="col-auto box ameryka">
+      <article class="offer">
+        <span class="discount">-8%</span>
+        <div class="image">
+          <img src="./images/york.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2>Weekend w Nowym Jorku</h2>
+          <div class="price"> 
+            <span class="old-price">2300 zł</span> 
+            <span class="new-price">2500 zł</span>
+          </div>
+          <p><strong>Termin:</strong><span>12-14 Listopada</span></p>
+          <p>Przeżyj niezapomniane chwile w wielkim mieście, pełnym atrakcji!</p>
+          <button class="offer-btn" onclick="pokazKomunikat()">Wybierz ofertę</button>
+          
+          </div>
+      </article>
+  </div>
+
+</div>
+
+<section class="review" id="review">
+  <h2 class="heading"> OPINIE <span> KLIENTÓW </span></h2>
+  <div class="box-container">
+    <div class="box">
+      <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+      </div>
+      <p>"'Quick Escape' to coś więcej niż tylko platforma do rezerwacji last-minute – to prawdziwa inspiracja do spontanicznych podróży! Wybór ofert jest imponujący, a ceny naprawdę konkurencyjne. Dzięki tej stronie możesz w kilka minut znaleźć najlepsze propozycje na szybki wyjazd, bez konieczności poświęcania wielu godzin na poszukiwania. Oferowane kierunki obejmują zarówno popularne destynacje, jak i egzotyczne miejsca, które mogą być idealnym celem na spontaniczną przygodę. </p>
+      <div class="user">  
+      <img src="./images/pexels-olly-846741.jpg" alt="">
+        <div class="user-info">
+          <h3>John Deo</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+      </div>
+      <p>"Rewelacyjny pomysł na szybkie i wygodne planowanie wakacji! 'Quick Escape' łączy prostotę użytkowania z bogatą ofertą last-minute, która zadowoli nawet najbardziej wymagających podróżników. Zaledwie kilka minut spędzonych na stronie pozwala znaleźć fantastyczne oferty w bardzo konkurencyjnych cenach. Niezależnie od tego, czy chcesz odpocząć na tropikalnej wyspie, czy odkrywać europejskie stolice, 'Quick Escape' ma coś dla każdego. To idealne narzędzie dla każdego, kto pragnie zorganizować podróż na ostatnią chwilę bez stresu i zbędnych formalności!"</p>
+      <div class="user">
+        <img src="./images/pexels-italo-melo-881954-2379004.jpg" alt="">
+        <div class="user-info">
+          <h3>Liam Bennett</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+      </div>
+      <p>"Jestem pod wrażeniem tego, jak sprawnie działa 'Quick Escape'! Nie musisz już godzinami przeszukiwać internetu w poszukiwaniu najlepszych ofert na spontaniczne wyjazdy. Platforma ta oferuje szybki dostęp do ofert last-minute, które są idealne dla osób, które nie planują wakacji z wyprzedzeniem, ale chcą wyjechać w wymarzone miejsce. Prosty i intuicyjny interfejs sprawia, że korzystanie z serwisu jest przyjemnością, a zaledwie kilka kliknięć wystarczy, by znaleźć wyjątkowe promocje na wyjazdy w różnych częściach świata. Zdecydowanie polecam!"</p>
+      <div class="user">
+        <img src="./images/pexels-vinicius-wiesehofer-289347-1130626.jpg" alt="">
+        <div class="user-info">
+          <h3>Emma Turner</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </div>
+
+
+    
+    <div id="message" style="display:none;">
+      Oferta została wybrana!
+  </div>
+  
+
+<script src="./script.js"></script>
+
+
+
+
+</body>
+</html>

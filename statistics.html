@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style-statistics.css">
+    <title>Statystyki Serwisu</title>
+</head>
+<body>
+
+  <div class="background"></div>
+  <header class="header">
+      <h2 class="logo"><i class='bx bxs-plane-alt'></i>
+          Quick Escape</h2>
+          <button class="menu-toggle2" onclick="toggleMenu2()">Menu</button>
+      <nav class="navbar">
+        <a href="index2.html">Strona Główna</a>
+        <a href="table.html">Nasze oferty</a>
+        <a href="contact.html">FAQ & Kontakt</a>
+      </nav>
+      
+      <div class="header-right"></div>
+      <form action="#" class="search-bar">
+        <input type="text" placeholder="Szukaj...">
+        <button type="submit"><i class="bx bx-search"></i></button>
+      </form>
+ 
+      <div class="user-menu">
+        <img src="./images/admin.png" alt="User" class="user-pic" onclick="toggleMenu()">
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="./images/admin.png" alt="User">
+              <h3>Admin</h3>
+            </div>
+            <hr>
+           <a href="./info.html" class="sub-menu-link">
+            <p>O twórcę<i class='bx bxs-cool'></i></p> 
+         </a>
+         <a href="./list.html" class="sub-menu-link">
+            <p>Zarejestrowani użytownicy<i class='bx bxs-user'></i></p>
+          </a>
+           <a href="login.html" class="sub-menu-link">
+             <p>Wyloguj się <i class='bx bx-log-out'></i></p>
+           </a>
+          </div>
+        </div>
+      </div>
+   
+
+  </header>
+  <div class="charts-header">
+    <h1>Statystyki Serwisu</h1>
+</div>
+
+<div class="charts-wrapper">
+  <div class="chart">
+      <h2>Liczba ofert podróżniczych w aplikacji</h2>
+      <canvas id="doughnut"></canvas>
+  </div>
+  <div class="chart">
+      <h2>Liczba odwiedzin w miesiącach</h2>
+      <canvas id="barChart"></canvas>
+  </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const ctx = document.getElementById('doughnut');
+    new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ['Europa', 'Afryka', 'Azja', 'Ameryka'],
+        datasets: [{
+            label: 'Ilość odsłon',
+            data: [55, 9, 30, 15],
+            backgroundColor: [
+                'rgb(255, 99, 132, 0.2)', 
+                'rgb(153, 102, 255, 0.2)',
+                'rgb(54, 162, 235, 0.2)', 
+                'rgb(255, 205, 86, 0.2)', 
+            ],
+            borderColor: [
+                'rgb(255, 99, 132, 1)',
+                'rgb(153, 102, 255, 1)',
+                'rgb(54, 162, 235, 1)',
+                'rgb(255, 205, 86, 1)',
+            ],
+            hoverOffset: 4
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,  
+        plugins: {
+            legend: {
+                position: 'top',
+                align: 'center',
+                labels: {
+                    padding: 10, 
+                    font: {
+                        size: 14  
+                    }
+                }
+            },
+            tooltip: {
+                callbacks: {
+                    label: function(tooltipItem) {
+                        return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+                    }
+                }
+            }
+        },
+        layout: {
+            padding: {
+                top: 10,  
+                bottom: 10, 
+                left: 20,
+                right: 20
+            }
+        }
+    }
+});
+
+
+
+const ctxBar = document.getElementById('barChart');
+new Chart(ctxBar, {
+    type: 'bar',
+    data: {
+        labels: ['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień'], // Dodano miesiące po czerwcu
+        datasets: [{
+            label: 'Liczba odwiedzin',
+            data: [1200, 1500, 1800, 2200, 2700, 3000, 3500, 3300, 2300, 1900, 2100, 1500], 
+            backgroundColor: [
+                'rgba(75, 192, 192, 0.2)', 
+                'rgba(255, 159, 64, 0.2)', 
+                'rgba(255, 205, 86, 0.2)', 
+                'rgba(54, 162, 235, 0.2)', 
+                'rgba(201, 203, 207, 0.2)', 
+                'rgba(153, 102, 255, 0.2)', 
+                'rgba(255, 99, 132, 0.2)', 
+                'rgba(54, 162, 235, 0.2)', 
+                'rgba(255, 206, 86, 0.2)', 
+                'rgba(75, 192, 192, 0.2)', 
+                'rgba(153, 102, 255, 0.2)', 
+                'rgba(255, 159, 64, 0.2)'  
+            ],
+            borderColor: [
+                'rgba(75, 192, 192, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 205, 86, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(201, 203, 207, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+            },
+        },
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+
+</script>
+
+<script src="./script.js"></script>
+</body>
+</html>

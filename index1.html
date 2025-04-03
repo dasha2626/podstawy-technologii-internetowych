@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+         content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quick Escape</title>
+        <link rel="stylesheet" href="style1.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     </head>
+    
+<body>
+    
+
+    <header class="header">
+        <h2 class="logo"><i class='bx bxs-plane-alt'></i>
+            Quick Escape</h2>
+        <button class="menu-toggle2" onclick="toggleMenu2()">Menu</button>
+        <nav class="navbar">
+          <a href="index1.html">Strona Główna</a>
+          <a href="table.html">Nasze Oferty</a>
+          <a href="contact.html">FAQ & Kontakt</a>
+        </nav>
+        
+        <div class="header-right"></div>
+        <form action="#" class="search-bar">
+          <input type="text" placeholder="Szukaj...">
+          <button type="submit"><i class="bx bx-search"></i></button>
+        </form>
+        <div class="user-menu">
+          <img src="./images/admin.png" alt="User" class="user-pic" onclick="toggleMenu()">
+           <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+              <div class="user-info">
+                <img src="./images/admin.png" alt="User">
+                <h3>Admin</h3>
+              </div>
+              <hr>
+              <a href="./statistics.html" class="sub-menu-link">
+                 <p><i class='bx bx-line-chart'></i>Statystyki</p> 
+              </a>
+              <a href="./info.html" class="sub-menu-link">
+                <p><i class='bx bxs-cool'></i>O twórcę</p>
+              </a>
+              <a href="./list.html" class="sub-menu-link">
+                <p><i class='bx bxs-user'></i>Zarejestrowani użytkownicy</p>
+              </a>
+              <a href="./index.html" class="sub-menu-link">
+                <p><i class='bx bx-log-out'></i>Wyloguj się</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      
+  
+    </header>
+    <div class="background"></div>
+    <section class="home" id="home">
+      <div class="content">
+          <h3 contenteditable="false">Quick Escape</h3>
+          <span contenteditable="false"  >Łap okazję i podróżuj po całym świecie już teraz!</span>
+          <p contenteditable="false" >Tutaj to miejsce, gdzie znajdziesz najlepsze okazje na spontaniczne podróże. Wystarczy kilka kliknięć, aby znaleźć i zarezerwować idealną podróż w ostatniej chwili.</p>
+          <button class="btn" onclick="editPost(this)">Edytuj</button>
+      </div>
+  </section>
+    
+
+
+<h1 class="heading">NAJNOWSZE <span> PROMOCJE</span> </h1>
+
+<button class="menu-toggle" aria-label="Otwórz menu">☰</button>
+<nav class="oferty" id="oferty">
+      <ul>
+          <li data-f="all">Wszystkie</li>
+          <li data-f="europa" class="text-europa">Europa</li>
+          <li data-f="afryka" class="text-afryka" >Afryka</li>
+          <li data-f="azja" class="text-azja" >Azja</li>
+          <li data-f="ameryka" class="ameryka" >Ameryka Północna</li>
+      </ul>
+  </nav>
+
+    <div class="block-cover">
+
+      <div class="offers">
+        <div class="col-auto box europa">
+          <article class="offer">
+              <span class="discount" contenteditable="false">-10%</span>
+              <div class="image">
+                  <img src="./images/greece.jpg" alt="">
+              </div>
+              <div class="content">
+                  <h2 contenteditable="false">Wyjazd do Grecji</h2>
+                  <div class="price">
+                      <span class="old-price" contenteditable="false">2500 zł</span>
+                      <span  class="new-price" contenteditable="false">2750 zł</span>
+                  </div>
+                  <p><strong>Termin:</strong> <span contenteditable="false">20-30 Lipca</span></p>
+                  <p contenteditable="false">Fantastyczny wyjazd last-minute na greckie wyspy!</p>
+                  <button class="edit-btn" onclick="editPost(this)">Edytuj</button>
+              </div>
+          </article>
+      </div>
+      
+
+     <div class="col-auto box europa">
+       <article class="offer">
+        <span class="discount" contenteditable="false">-20%</span>
+        <div class="image">
+        <img src="./images/spain.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2 contenteditable="false">Wakacje w Hiszpanii</h2>
+          <div class="price">
+            <span class="old-price" contenteditable="false">2500 zł</span>
+        <span class="new-price" contenteditable="false">2000 zł</span>
+            </div>
+          <p><strong>Termin:</strong><span contenteditable="false">10-20 Sierpnia</span></p>
+          <p contenteditable="false">Gorące wakacje na słonecznym wybrzeżu Costa Brava!</p>
+          <button class="edit-btn" onclick="editPost(this)">Edytuj</button>
+        </div>
+       </article>
+    </div>
+
+  <div class="col-auto box europa">
+   <article class="offer">
+    <span class="discount" contenteditable="false">-15%</span>
+    <div class="image">
+      <img src="./images/paris.jpg" alt="">
+    </div>
+    <div class="content">
+      <h2 contenteditable="false">Weekend w Paryżu</h2>
+      <div class="price"> 
+        <span class="old-price" contenteditable="false">2500 zł</span> 
+        <span  class="new-price"  contenteditable="false">2750 zł </span>
+      </div>
+      <p><strong>Termin:</strong><span contenteditable="false">5-7 Września</span></p>
+      <p contenteditable="false">Romantyczny weekend w stolicy Francji!</p>
+      <button class="edit-btn" onclick="editPost(this)">Edytuj</button>
+      </div>
+   </article>
+  </div>
+
+
+    <div class="col-auto box azja">
+      <article class="offer">
+        <span class="discount" contenteditable="false">-5%</span>
+        <div class="image">
+          <img src="./images/thailand.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2 contenteditable="false">Wakacje w Tajlandii</h2>
+          <div class="price"> 
+            <span class="old-price" contenteditable="false">2625 zł</span> 
+            <span  class="new-price" contenteditable="false">2750 zł </span>
+          </div>
+          <p><strong>Termin:</strong><span contenteditable="false">10-15 Października</span></p>
+          <p contenteditable="false">Rajski wypoczynek na plażach Tajlandii, z odkrywaniem kultury i wspaniałych świątyń!</p>
+          <button class="edit-btn" onclick="editPost(this)">Edytuj</button>
+          </div>
+      </article>
+    </div> 
+
+
+    <div class="col-auto box afryka">
+      <article class="offer">
+        <span class="discount" contenteditable="false">-30%</span>
+        <div class="image">
+          <img src="./images/Seychelles.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2 contenteditable="false">Relaks na Wyspach Seszeli</h2>
+          <div class="price"> 
+            <span class="old-price" contenteditable="false">1750 zł</span>
+            <span  class="new-price"  contenteditable="false"> 2500 zł </span>
+          </div>
+          <p><strong>Termin:</strong><span contenteditable="false">20-27 Listopada</span></p>
+          <p contenteditable="false">Odkryj rajskie plaże i tropikalną przyrodę na Seszelach!</p>
+          <button class="edit-btn" onclick="editPost(this)">Edytuj</button>
+          </div>
+      </article>
+  </div>
+  
+  <div class="col-auto box azja">
+      <article class="offer">
+        <span class="discount" contenteditable="false">-25%</span>
+        <div class="image">
+          <img src="./images/Bali.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2 contenteditable="false">Wakacje na Bali</h2>
+          <div class="price"> 
+            <span class="old-price" contenteditable="false">1875 zł</span> 
+              <span class="new-price" contenteditable="false">2500 zł</span>
+            </div>
+          <p><strong>Termin:</strong><span contenteditable="false">15-22 Listopada</span></p>
+          <p contenteditable="false">Odpocznij na malowniczych plażach Bali i ciesz się lokalną kulturą!</p>
+          <button class="edit-btn" onclick="editPost(this)">Edytuj</button>
+          </div>
+      </article>
+  </div>
+  
+  <div class="col-auto box azja">
+      <article class="offer">
+        <span class="discount" contenteditable="false">-12%</span>
+        <div class="image">
+          <img src="./images/japan.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2 contenteditable="false">Zwiedzanie Japonii</h2>
+          <div class="price">  
+            <span class="old-price" contenteditable="false">2250 zł</span> 
+            <span class="new-price" contenteditable="false">2500 zł</span>
+          </div>
+          <p><strong>Termin:</strong><span contenteditable="false">1-8 Grudnia</span></p>
+          <p contenteditable="false">Odkryj magiczne miejsca Tokio i Kyoto oraz delektuj się sushi!</p>
+          <button class="edit-btn" onclick="editPost(this)">Edytuj</button>
+        </div>
+      </article>
+  </div>
+
+
+  <div class="col-auto box ameryka">
+      <article class="offer">
+        <span class="discount" contenteditable="false">-8%</span>
+        <div class="image">
+          <img src="./images/york.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2 contenteditable="false">Weekend w Nowym Jorku</h2>
+          <div class="price"> 
+            <span class="old-price" contenteditable="false">2300 zł</span> 
+            <span class="new-price" contenteditable="false">2500 zł</span>
+          </div>
+          <p><strong>Termin:</strong><span contenteditable="false">12-14 Listopada</span></p>
+          <p contenteditable="false">Przeżyj niezapomniane chwile w wielkim mieście, pełnym atrakcji!</p>
+          <button class="edit-btn" onclick="editPost(this)">Edytuj</button>
+          </div>
+      </article>
+  </div>
+
+</div>
+    </div>
+
+
+
+
+
+
+<script src="./script.js"></script>
+
+
+
+
+</body>
+</html>

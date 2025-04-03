@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>Quick Escape</title>
+        <link rel="stylesheet" href="style-table.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+     </head>
+    
+<body>
+    
+<div class="background"></div>
+    <header class="header">
+        <h2 class="logo"><i class='bx bxs-plane-alt'></i>
+            Quick Escape</h2>
+
+        <button class="menu-toggle2" onclick="toggleMenu2()">Menu</button>
+        <nav class="navbar">
+          <a href="index2.html">Strona Główna</a>
+          <a href="table.html">Nasze oferty</a>
+          <a href="contact.html">FAQ & Kontakt</a>
+        </nav>
+  
+        <div class="header-right"></div>
+        <form action="#" class="search-bar">
+          <input type="text" placeholder="Szukaj...">
+          <button type="submit"><i class="bx bx-search"></i></button>
+        </form>
+        <div class="user-menu">
+          <img src="./images/ikonka.png" alt="User" class="user-pic" onclick="toggleMenu()">
+          <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+              <div class="user-info">
+                <img src="./images/ikonka.png" alt="User">
+                <h3>Daria Shapoval</h3>
+              </div>
+              <hr>
+             <a href="./profile.html" class="sub-menu-link">
+               <p><i class='bx bxs-edit'></i>Edytuj profil</p>
+             </a>
+             <a href="./info.html" class="sub-menu-link">
+              <p><i class='bx bxs-cool'></i>O twórcę</p> 
+           </a>
+             <a href="./index.html" class="sub-menu-link">
+               <p><i class='bx bx-log-out'></i>Wyloguj się</p>
+             </a>
+            </div>
+          </div>
+        </div>
+      
+  
+  
+    </header>
+   
+    <main>
+      
+      <div class="wrapper">
+
+        <h1>Nasze oferty</h1>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+                <th></th>
+                <th>Hotel</th>
+                <th>Data</th>
+                <th>Cena</th>
+                <th>Ocena</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-cell="zdjecie">
+                <div class="oferta">
+                    <span class="country">Bali</span>
+                    <div class="image">
+                        <img src="./images-tables/bali.jpg" alt="Hotel na Bali">
+                    </div>
+                </div>
+            </td>
+            <td data-cell="hotel"><i class='bx bx-hotel'></i>Hotel Paradise</td>
+            <td data-cell="data"><i class='bx bxs-calendar'></i>22 listopada - 28 listopada 2024</td>
+            <td data-cell="cena"><i class='bx bx-coin-stack'></i>od 2300 PLN</td>
+            <td data-cell="ocena"><i class='bx bx-star'></i>4.5</td>
+            <td data-cell="wybierz"> 
+              <button type="button" class="przycisk">Szczegóły</button>
+            </td>
+        </tr>
+          
+        <tr>
+          <td data-cell="zdjecie">
+              <div class="oferta">
+                  <span class="country">Bruksela</span>
+                  <div class="image">
+                      <img src="./images-tables/bruxel.jpg" alt="">
+                  </div>
+              </div>
+          </td>
+          <td data-cell="hotel"><i class='bx bx-hotel'></i>Hotel Sunshine</td>
+          <td data-cell="data"><i class='bx bxs-calendar'></i>23 listopada - 29 listopada 2024</td>
+          <td data-cell="cena"><i class='bx bx-coin-stack'></i>od 1050 PLN</td>
+          <td data-cell="ocena"><i class='bx bx-star'></i>4.0</td>
+          <td data-cell="wybierz">
+            <button type="button" class="przycisk">Szczegóły</button>
+          </td>
+      </tr>
+      
+      <tr>
+        <td data-cell="zdjecie">
+            <div class="oferta">
+                <span class="country">Egipt</span>
+                <div class="image">
+                    <img src="./images-tables/egypt.jpg" alt="Hotel na Egipcie">
+                </div>
+            </div>
+        </td>
+        <td data-cell="hotel"><i class='bx bx-hotel'></i>Hotel Ocean View</td>
+        <td data-cell="data"><i class='bx bxs-calendar'></i>24 listopada - 30 listopada 2024</td>
+        <td data-cell="cena"><i class='bx bx-coin-stack'></i>od 3200 PLN</td>
+        <td data-cell="ocena"><i class='bx bx-star'></i>4.3</td>
+        <td data-cell="wybierz">
+          <button type="button" class="przycisk">Szczegóły</button>
+        </td>
+    </tr>
+    
+          
+    <tr>
+      <td data-cell="zdjecie">
+          <div class="oferta">
+              <span class="country">Niemcy</span>
+              <div class="image">
+                  <img src="./images-tables/germany.jpg" alt="Hotel na Niemczech">
+              </div>
+          </div>
+      </td>
+      <td data-cell="hotel"><i class='bx bx-hotel'></i>Hotel Sunset</td>
+      <td data-cell="data"><i class='bx bxs-calendar'></i>25 listopada - 1 grudnia 2024</td>
+      <td data-cell="cena"><i class='bx bx-coin-stack'></i>od 1950 PLN</td>
+      <td data-cell="ocena"><i class='bx bx-star'></i>3.8</td>
+      <td data-cell="wybierz">
+        <button type="button" class="przycisk">Szczegóły</button>
+      </td>
+  </tr>
+  
+  <tr>
+    <td data-cell="zdjecie">
+        <div class="oferta">
+            <span class="country">Grecja</span>
+            <div class="image">
+                <img src="./images-tables/grecja.jpg" alt="Hotel na Grecji">
+            </div>
+        </div>
+    </td>
+    <td data-cell="hotel"><i class='bx bx-hotel'></i>Hotel Grand</td>
+    <td data-cell="data"><i class='bx bxs-calendar'></i>26 listopada - 2 grudnia 2024</td>
+    <td data-cell="cena"><i class='bx bx-coin-stack'></i>od 8400 PLN</td>
+    <td data-cell="ocena"><i class='bx bx-star'></i>4.7</td>
+    <td data-cell="wybierz">
+      <button type="button" class="przycisk">Szczegóły</button>
+    </td>
+</tr>
+
+
+
+<tr>
+  <td data-cell="zdjecie">
+      <div class="oferta">
+          <span class="country">Włochy</span>
+          <div class="image">
+              <img src="./images-tables/italia.jpg" alt="Hotel na Włoszech">
+          </div>
+      </div>
+  </td>
+  <td data-cell="hotel"><i class='bx bx-hotel'></i>Hotel Royal</td>
+  <td data-cell="data"><i class='bx bxs-calendar'></i>27 listopada - 3 grudnia 2024</td>
+  <td data-cell="cena"><i class='bx bx-coin-stack'></i>od 5050 PLN</td>
+  <td data-cell="ocena"><i class='bx bx-star'></i>4.2</td>
+  <td data-cell="wybierz">
+    <button type="button" class="przycisk">Szczegóły</button>
+  </td>
+</tr>
+
+<tr>
+  <td data-cell="zdjecie">
+      <div class="oferta">
+          <span class="country">Kenia</span>
+          <div class="image">
+              <img src="./images-tables/kenia.jpg" alt="Hotel na Kenii">
+          </div>
+      </div>
+  </td>
+  <td data-cell="hotel"><i class='bx bx-hotel'></i>Hotel Horizon</td>
+  <td data-cell="data"><i class='bx bxs-calendar'></i>28 listopada - 4 grudnia 2024</td>
+  <td data-cell="cena"><i class='bx bx-coin-stack'></i>od 6900 PLN</td>
+  <td data-cell="ocena"><i class='bx bx-star'></i>4.8</td>
+  <td data-cell="wybierz">
+    <button type="button" class="przycisk">Szczegóły</button>
+  </td>
+</tr>
+
+<tr>
+  <td data-cell="zdjecie">
+      <div class="oferta">
+          <span class="country">Malediwy</span>
+          <div class="image">
+              <img src="./images-tables/maldivies.jpg" alt="Hotel na Malediwach">
+          </div>
+      </div>
+  </td>
+  <td data-cell="hotel"><i class='bx bx-hotel'></i>Hotel Mountain</td>
+  <td data-cell="data"><i class='bx bxs-calendar'></i>29 listopada - 5 grudnia 2024</td>
+  <td data-cell="cena"><i class='bx bx-coin-stack'></i>od 7800 PLN</td>
+  <td data-cell="ocena"><i class='bx bx-star'></i>4.6</td>
+  <td data-cell="wybierz">
+    <button type="button" class="przycisk">Szczegóły</button>
+  </td>
+</tr>
+
+<tr>
+  <td data-cell="zdjecie">
+      <div class="oferta">
+          <span class="country">USA</span>
+          <div class="image">
+              <img src="./images-tables/york.jpg" alt="Hotel na Nowy Jork">
+          </div>
+      </div>
+  </td>
+  <td data-cell="hotel"><i class='bx bx-hotel'></i>Hotel Seaside</td>
+  <td data-cell="data"><i class='bx bxs-calendar'></i>30 listopada - 6 grudnia 2024</td>
+  <td data-cell="cena"><i class='bx bx-coin-stack'></i>od 2950 PLN</td>
+  <td data-cell="ocena"><i class='bx bx-star'></i>3.9</td>
+  <td data-cell="wybierz">
+    <button type="button" class="przycisk">Szczegóły</button>
+  </td>
+</tr>
+
+          
+<tr>
+  <td data-cell="zdjecie">
+      <div class="oferta">
+          <span class="country">Francja</span>
+          <div class="image">
+              <img src="./images-tables/paris.jpg" alt="Hotel na Paris">
+          </div>
+      </div>
+  </td>
+  <td data-cell="hotel"><i class='bx bx-hotel'></i>Hotel Forest</td>
+  <td data-cell="data"><i class='bx bxs-calendar'></i>1 grudnia - 7 grudnia 2024</td>
+  <td data-cell="cena"><i class='bx bx-coin-stack'></i>od 3900 PLN</td>
+  <td data-cell="ocena"><i class='bx bx-star'></i>4.1</td>
+  <td data-cell="wybierz">
+    <button type="button" class="przycisk">Szczegóły</button>
+  </td>
+</tr>
+
+<tr>
+  <td data-cell="zdjecie">
+      <div class="oferta">
+          <span class="country">Seszele</span>
+          <div class="image">
+              <img src="./images-tables/say.jpg" alt="Hotel na Seszele">
+          </div>
+      </div>
+  </td>
+  <td data-cell="hotel"><i class='bx bx-hotel'></i>Hotel City View</td>
+  <td data-cell="data"><i class='bx bxs-calendar'></i>2 grudnia - 8 grudnia 2024</td>
+  <td data-cell="cena"><i class='bx bx-coin-stack'></i>od 5050 PLN</td>
+  <td data-cell="ocena"><i class='bx bx-star'></i>4.4</td>
+  <td data-cell="wybierz">
+    <button type="button" class="przycisk">Szczegóły</button>
+  </td>
+</tr>
+
+<tr>
+  <td data-cell="zdjecie">
+      <div class="oferta">
+          <span class="country">Hiszpania</span>
+          <div class="image">
+              <img src="./images-tables/spain.jpg" alt="Hotel na Hiszpania">
+          </div>
+      </div>
+  </td>
+  <td data-cell="hotel"><i class='bx bx-hotel'></i>Hotel Park</td>
+  <td data-cell="data"><i class='bx bxs-calendar'></i>3 grudnia - 9 grudnia 2024</td>
+  <td data-cell="cena"><i class='bx bx-coin-stack'></i>od 4100 PLN</td>
+  <td data-cell="ocena"><i class='bx bx-star'></i>4.3</td>
+  <td data-cell="wybierz">
+    <button type="button" class="przycisk">Szczegóły</button>
+  </td>
+</tr>
+
+          
+<tr>
+  <td data-cell="zdjecie">
+      <div class="oferta">
+          <span class="country">Japonia</span>
+          <div class="image">
+              <img src="./images-tables/tokio.jpg" alt="Hotel na Japonii">
+          </div>
+      </div>
+  </td>
+  <td data-cell="hotel"><i class='bx bx-hotel'></i>Hotel Beach</td>
+  <td data-cell="data"><i class='bx bxs-calendar'></i>4 grudnia - 10 grudnia 2024</td>
+  <td data-cell="cena"><i class='bx bx-coin-stack'></i>6980 PLN - 7050 PLN</td>
+  <td data-cell="ocena"><i class='bx bx-star'></i>4.2</td>
+  <td data-cell="wybierz">
+    <button type="button" class="przycisk">Szczegóły</button>
+  </td>
+</tr>
+
+          
+<tr>
+  <td data-cell="zdjecie">
+      <div class="oferta">
+          <span class="country">Turcja</span>
+          <div class="image">
+              <img src="./images-tables/turcja.jpg" alt="Hotel na Turcji">
+          </div>
+      </div>
+  </td>
+  <td data-cell="hotel"><i class='bx bx-hotel'></i>Hotel Luxury</td>
+  <td data-cell="data"><i class='bx bxs-calendar'></i>5 grudnia - 11 grudnia 2024</td>
+  <td data-cell="cena"><i class='bx bx-coin-stack'></i>11200 PLN - 11300 PLN</td>
+  <td data-cell="ocena"><i class='bx bx-star'></i>4.6</td>
+  <td data-cell="wybierz">
+      <button type="button" class="przycisk">Szczegóły</button>
+  </td>
+</tr>
+
+
+          
+        
+          
+        </tbody>
+          
+
+        </table>
+
+      </div>
+
+      </div>
+    </main>
+    
+
+
+<script src="./script.js"></script>
+
+
+
+
+</body>
+</html>

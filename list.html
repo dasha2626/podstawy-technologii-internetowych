@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+ <html LANG="pl">
+
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+    content="IE=edge">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Quick Escape</title>
+    <link rel="stylesheet" href="./list.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ </head>
+
+
+ <body>
+    <header class="header">
+        <h2 class="logo"><i class='bx bxs-plane-alt'></i>
+            Quick Escape</h2>
+        <button class="menu-toggle2" onclick="toggleMenu2()">Menu</button>
+        <nav class="navbar">
+          <a href="index2.html">Strona Główna</a>
+          <a href="table.html">Nasze Oferty</a>
+          <a href="contact.html">FAQ & Kontakt</a>
+          
+        </nav>
+        
+        <div class="header-right"></div>
+        <form action="#" class="search-bar">
+          <input type="text" placeholder="Szukaj...">
+          <button type="submit"><i class="bx bx-search"></i></button>
+        </form>
+        <div class="user-menu">
+          <img src="./images/admin.png" alt="User" class="user-pic" onclick="toggleMenu()">
+          <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+              <div class="user-info">
+                <img src="./images/admin.png" alt="User">
+                <h3>Admin</h3>
+              </div>
+              <hr>
+              <a href="./statistics.html" class="sub-menu-link">
+                <p><i class='bx bx-line-chart'></i>Statystyki</p> 
+             </a>
+               <a href="./info.html" class="sub-menu-link">
+                 <p><i class='bx bxs-cool'></i>O twórcę</p>
+               </a>
+               <a href="./index.html" class="sub-menu-link">
+                 <p><i class='bx bx-log-out'></i>Wyloguj się</p>
+               </a>
+            </div>
+          </div>
+        </div>
+      
+  
+    </header>
+ 
+      <div class="background"></div>
+ 
+      <div class="container">
+       <div class="content">
+        <div class="text-container">
+        <h3>Zarejestrowani </h3>
+        <h3>użytkownicy</h3>
+        <div class="text">
+            <div class="profile">
+                <a href="./profile.html">
+                    <img src="./images/ikonka.png" alt="" >
+                    <span>Daria Shapoval</span>
+                </a>
+            </div>
+            <div class="profile">
+                <a href="./profile2.html">
+                    <img src="./images/ikonka2.jpg" alt="" >
+                    <span>Angelina Jolie</span>
+                </a>
+            </div>
+
+
+        </div>
+       
+    </div>
+       
+          </div>
+      </div>
+    
+  
+<script src="./script.js"></script>
+
+  </body>
+  </html>
